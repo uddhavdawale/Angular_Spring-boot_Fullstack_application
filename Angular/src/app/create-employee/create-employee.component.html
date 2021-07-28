@@ -1,0 +1,47 @@
+
+myname is {{myname}}
+
+<div style="text-align: center">
+  <h1> {{message}}</h1>
+</div>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+      <form> 
+        <fieldset>
+        <h3> <i><label for="formGroupExampleInput2"> Create Employee Record </label> </i></h3>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Employee ID   :</label>
+          <input type="text"  id="uid"   placeholder="Employee ID" required
+          [(ngModel)]="user.uid" name="userid" >  
+        </div>
+
+        <div class="form-group">
+          <label for="formGroupExampleInput">Student Name    :</label>
+      <!--    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">-->
+       <input type="text"  id="Sname" [(ngModel)]="user.fname"  name="fname"  placeholder="First Name">  <input type="text" id="Mname" [(ngModel)]="user.mname" name="midlename" placeholder="mid Name"> <input type="text" id="lname" [(ngModel)]="user.lname" name="lastname" placeholder="last Name"> 
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Phone/mobile Number   :</label>
+          <input type="text"  id="phone" [(ngModel)]="user.phone" name="phone" placeholder="phone">  
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Student Address    :</label>
+          <input type="text"  id="city" [(ngModel)]="user.city" name="ciity" placeholder="City">   <input type="text"  id="state" [(ngModel)]="user.state" name="state"  placeholder="State"> <input type="text" id="pincode" [(ngModel)]="user.pincode" name="pincode" placeholder="pincode"> 
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Dates      :</label>
+          <input type="text"  id="DOB"  [(ngModel)]="user.dob" name="DOB" placeholder="date of birth ">  <input type="text" id="DOJ" [(ngModel)]="user.doj" name="DOj"  placeholder="Date of joining "> 
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">profile   :</label>
+          <input type="text"  id="proflile"  [(ngModel)]="user.profile" name="userprofile" placeholder="profile">  
+        </div>
+        <div class="form-group">
+          
+          <input style="background-color: chartreuse;"  type="submit"  id="phone" placeholder="Create" value="create " (click)="registernow()">   
+          <input style="background-color: chartreuse;"  type="submit"  id="phone" placeholder="update" value="Update" (click)="registernow()">   
+        </div>
+      </fieldset>
+      </form>   
+    </div>  
+  </div>

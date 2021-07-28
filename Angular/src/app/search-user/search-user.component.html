@@ -1,0 +1,128 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+      <form>
+         <h3> <i><label for="formGroupExampleInput2"> Fetch Employee Record </label> </i></h3>
+            <div class="form-group">
+            <label for="formGroupExampleInput2">Employee ID   :</label>
+           <input type="text"  id="empid" [(ngModel)]="uid" name="uid" placeholder="Employee ID">  
+            <input type="text"  id="fname" [(ngModel)]="fname" name="first name"  placeholder="first name">  
+            <input type="text"  id="lname" [(ngModel)]="lname" name="Last name" placeholder="lst name">
+            <input type="text"  id="pin" [(ngModel)]="pincode" name="pincode"  placeholder="pincode">  <br>
+ <br> 
+          <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="sid" placeholder="Create" value="Get info By ID" name="a" (click)="getinfobyuid()"> <!--    -->
+            <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="f" placeholder="Create" value="Get info By Firstname " name="a" (click)="getinfouser()">  
+            <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="l" placeholder="Create" value="Get info by lastname " name="lastsearch" (click)="getinfobylastname()">    
+            <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="pin" placeholder="Create" value="Get info by Pincode  " name="a" (click)="getinfobypincode()">         
+    </div>
+        </form>
+    </div>
+</div>
+
+<!-- ********************************
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+      <form>
+         <h3> <i><label for="formGroupExampleInput2"> Fetch Employee Record </label> </i></h3>
+            <div class="form-group">
+            <label for="formGroupExampleInput2">Employee ID   :</label>
+            <input type="text"  id="empid" [(ngModel)]="uid" name="uid" placeholder="Employee ID"> 
+              <br>
+ 
+            <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="sid" placeholder="Create" value="Get info By ID" name="a" (click)="getinfobyuid()">   
+         
+    </div>
+        </form>
+    </div>
+</div>-->
+
+
+<div>
+    <h3> Employee Information shows only searched by Name,Lastname,Pincode</h3>
+<div>
+    <table class="table table-striped"> 
+        <thead>
+                <th> UID </th>
+                <th> Fname</th>
+                <th> Mname</th>
+                <th> Lname</th>
+                <th> Phone</th>
+                <th> City</th>
+                <th>State </th>
+                <th> Pincode</th>
+                <th> Dob</th>
+                <th> Doj </th>
+                <th> Profile</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor= "let u of users" > 
+                <td> {{u.uid}} </td>
+                <td> {{u.fname}} </td>
+                <td> {{u.mname}} </td>
+                <td> {{u.lname}} </td>
+                <td> {{u.phone}} </td>
+                <td> {{u.city}} </td>
+                <td> {{u.state}} </td>
+                <td> {{u.pincode}} </td>
+                <td> {{u.dob}} </td>
+                <td> {{u.doj}} </td>
+                <td> {{u.profile}} </td>
+                
+                </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<div>
+    <h2> Employee Information searched by ID </h2>
+<div>
+    <table class="table table-striped"> 
+        <thead>
+                <th> UID </th>
+                <th> Fname</th>
+                <th> Mname</th>
+                <th> Lname</th>
+                <th> Phone</th>
+                <th> City</th>
+                <th>State </th>
+                <th> Pincode</th>
+                <th> Dob</th>
+                <th> Doj </th>
+                <th> Profile</th>
+
+        </thead>
+        <tbody>
+            <tr  > 
+                <td> {{obj.uid}} </td>
+                <td> {{obj.fname}} </td>
+                <td> {{obj.mname}} </td>
+                <td> {{obj.lname}} </td>
+                <td> {{obj.phone}} </td>
+                <td> {{obj.city}} </td>
+                <td> {{obj.state}} </td>
+                <td> {{obj.pincode}} </td>
+                <td> {{obj.dob}} </td>
+                <td> {{obj.doj}} </td>
+                <td> {{obj.profile}} </td>
+                
+                </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+</div>

@@ -1,0 +1,46 @@
+<div>
+
+
+
+<h2> Employee Information </h2>
+<div>
+    <table class="table table-striped"> 
+        <thead>
+                <th> UID </th>
+                <th> Fname</th>
+                <th> Mname</th>
+                <th> Lname</th>
+                <th> Phone</th>
+                <th> City</th>
+                <th>State </th>
+                <th> Pincode</th>
+                <th> Dob</th>
+                <th> Doj </th>
+                <th> Profile</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor= "let u of users" > 
+                <td> {{u.uid}} </td>
+                <td> {{u.fname}} </td>
+                <td> {{u.mname}} </td>
+                <td> {{u.lname}} </td>
+                <td> {{u.phone}} </td>
+                <td> {{u.city}} </td>
+                <td> {{u.state}} </td>
+                <td> {{u.pincode}} </td>
+                <td> {{u.dob}} </td>
+                <td> {{u.doj}} </td>
+                <td> {{u.profile}} </td>
+                
+                </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+
+</div>
+
+

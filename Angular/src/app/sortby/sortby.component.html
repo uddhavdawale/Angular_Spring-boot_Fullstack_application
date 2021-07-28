@@ -1,0 +1,101 @@
+<p>sortby works!</p>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+      <form>
+         <h3> <i><label for="formGroupExampleInput2"> Fetch Employee Record </label> </i></h3>
+            <div class="form-group">
+            <label for="formGroupExampleInput2"> Sort by DOB and Joining date   :</label>
+      <!--   <input type="text"  id="sortbydoj" [(ngModel)]="sortbydoj" name="sortbydoj1" placeholder="Employee ID">  
+            <input type="text"  id="sortbydojanddob" [(ngModel)]="sortbydojanddob" name="sortbydojanddob1"  placeholder="first name">  
+            srtbydob <br>-->
+ <br> 
+          <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="sid" placeholder="Create" value="Sort by DOB" name="a" (click)="sortbydoj1()"> <!--    -->
+            <input style="background-color: rgba(211, 231, 28, 0.842);"  type="submit"  id="f" placeholder="Create" value="Sort by DOB and DOJ " name="a" (click)="sortbydojanddob1()">  
+            
+    </div>
+        </form>
+    </div>
+</div>
+
+<!--****************************************-->
+
+<div>
+    <h3> Employee Information Sorted by Date of birth and joining date </h3>
+<div>
+    <table class="table table-striped"> 
+        <thead>
+                <th> UID </th>
+                <th> Fname</th>
+                <th> Mname</th>
+                <th> Lname</th>
+                <th> Phone</th>
+                <th> City</th>
+                <th>State </th>
+                <th> Pincode</th>
+                <th> Dob</th>
+                <th> Doj </th>
+                <th> Profile</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor= "let u of users" > 
+                <td> {{u.uid}} </td>
+                <td> {{u.fname}} </td>
+                <td> {{u.mname}} </td>
+                <td> {{u.lname}} </td>
+                <td> {{u.phone}} </td>
+                <td> {{u.city}} </td>
+                <td> {{u.state}} </td>
+                <td> {{u.pincode}} </td>
+                <td> {{u.dob}} </td>
+                <td> {{u.doj}} </td>
+                <td> {{u.profile}} </td>
+                
+                </tr>
+        </tbody>
+
+    </table>
+
+</div>
+<!--
+********************************************************************
+<div>
+    <h3> Employee Information Sorted by Date of birth and joining date </h3>
+<div>
+    <table class="table table-striped"> 
+        <thead>
+                <th> UID </th>
+                <th> Fname</th>
+                <th> Mname</th>
+                <th> Lname</th>
+                <th> Phone</th>
+                <th> City</th>
+                <th>State </th>
+                <th> Pincode</th>
+                <th> Dob</th>
+                <th> Doj </th>
+                <th> Profile</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor= "let u of users1" > 
+                <td> {{u.uid}} </td>
+                <td> {{u.fname}} </td>
+                <td> {{u.mname}} </td>
+                <td> {{u.lname}} </td>
+                <td> {{u.phone}} </td>
+                <td> {{u.city}} </td>
+                <td> {{u.state}} </td>
+                <td> {{u.pincode}} </td>
+                <td> {{u.dob}} </td>
+                <td> {{u.doj}} </td>
+                <td> {{u.profile}} </td>
+                
+                </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+-->
